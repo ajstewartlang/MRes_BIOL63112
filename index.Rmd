@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Welcome to the Advanced Data Skills, Open Science and Reproducibility M.Res. unit BIOL63112. The following video (as with all the others in this unit) is best viewed in fullscreen mode at 1080 resolution. I have recorded the audio with a podcasting microphone, so it's best listened to with headphones. YouTube generates subtitles automatically, so please turn those in if you'd find them useful. 
 
-As well as being able to contact me via [email](mailto:drandrewjstewart@gmail.com) you can also contact me via our dedicated Slack channel. The details on how to join our Slack channel can be found on Blackboard. You can install the Slack app on your computer or phone - I recommend you do this as interacting with Slack via the app is really great. 
+As well as being able to contact me via [email](mailto:drandrewjstewart@gmail.com) you can also contact me via our dedicated Slack channel. The details on how to join our Slack channel can be found on Blackboard. You can install the Slack app on your computer or phone - I recommend you do this as interacting with Slack via the app is really great.
 
 You can speak to me in one of the timetabled Zoom sessions (the details of those are on Blackboard) or via a personal meeting request - just ping me via email or Slack to request that. Additionally, you can follow me on [Twitter](https://twitter.com/ajstewart_lang?lang=en) where you'll see me tweet and re-tweet lots of Open Research and R content.
 
