@@ -75,6 +75,21 @@ In this session we will look at some R programming techniques that you can use t
 
 # Text Mining
 
+In this session we will cover the basics of text mining using R and examine how to count the occurrences of words in a text, engage in a basic sentiment analysis to examine what kinds of sentiments might be most common in a text. We'll also cover how to use measures such as term frequency-inverse document frequency as a way to understand what words (or phrases) are most uniquely associated with a text (compared to another set of texts).
+
+<center>
+
+&nbsp;  
+
+[![](images/text_mining.png){width=75%}](https://ajstewartlang.github.io/27_introduction_to_text_mining/knitted_workshop/27_introduction_to_text_mining.html)
+
+&nbsp;  
+
+</center>
+
+&nbsp;&nbsp;
+
+
 # Hackathon
 
 ## Technical Details
