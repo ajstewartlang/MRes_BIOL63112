@@ -14,20 +14,28 @@
 
 <title>Welcome</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -39,11 +47,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -56,32 +59,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 
 
@@ -91,10 +69,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -111,40 +85,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -172,7 +119,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -184,7 +131,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -195,10 +142,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -210,7 +170,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -336,7 +295,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -368,7 +327,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -384,8 +343,8 @@ div.tocify {
 <p>You can speak to me in one of the timetabled Zoom sessions (the details of those are on Blackboard) or via a personal meeting request - just ping me via email or Slack to request that. Additionally, you can follow me on <a href="https://twitter.com/ajstewart_lang?lang=en">Twitter</a> where you’ll see me tweet and re-tweet lots of Open Research and R content.</p>
 <p>There are two assignments associated with this unit. The full details of these (plus hand in dates) can be found on the Blackboard page for this Unit.</p>
 <p>   </p>
-<div id="mixed-models-part-1-1102" class="section level1">
-<h1>Mixed Models Part 1 (11/02)</h1>
+<div id="mixed-models-part-1-0702" class="section level1">
+<h1>Mixed Models Part 1 (07/02)</h1>
 <p>In this first part we will see how mixed models combine aspects of linear regression and ANOVA while circumventing the need for observations to be independent of each other. We will also examine how we model the influence of random effects in our mixed models, and see how mixed models can cope with unbalanced designs and missing data.</p>
 <center>
 <p> </p>
@@ -394,8 +353,8 @@ div.tocify {
 </center>
 <p>  </p>
 </div>
-<div id="mixed-models-part-2-1802" class="section level1">
-<h1>Mixed Models Part 2 (18/02)</h1>
+<div id="mixed-models-part-2-1402" class="section level1">
+<h1>Mixed Models Part 2 (14/02)</h1>
 <p>In the second part we will examine mixed models for factorial designs, and explore how to model non-continuous dependent variables (e.g., binary and ordinal outcome variables) using the <code>glmer()</code> family of mixed models.</p>
 <center>
 <p> </p>
@@ -404,8 +363,8 @@ div.tocify {
 </center>
 <p>  </p>
 </div>
-<div id="data-simulation-1103" class="section level1">
-<h1>Data Simulation (11/03)</h1>
+<div id="data-simulation-0703" class="section level1">
+<h1>Data Simulation (07/03)</h1>
 <p>In this session we will look at some R programming techniques that you can use to create simulated data sets. Data simulation is a really powerful tool as it allows you to determine whether you’re likely to find an effect (for an assumed effect size) by simulating (for example) 10,000 experiments of a particular design with a particular sample size. It’s also a great technique for determining whether your dataset will be sufficiently rich in order for you to build the kinds of models you need to in order to test a particular set of predictions.</p>
 <center>
 <p> </p>
@@ -414,8 +373,8 @@ div.tocify {
 </center>
 <p>  </p>
 </div>
-<div id="text-mining-1803" class="section level1">
-<h1>Text Mining (18/03)</h1>
+<div id="text-mining-1403" class="section level1">
+<h1>Text Mining (14/03)</h1>
 <p>In this session we will cover the basics of text mining using R and examine how to count the occurrences of words in a text, engage in a basic sentiment analysis to examine what kinds of sentiments might be most common in a text. We’ll also cover how to use measures such as term frequency-inverse document frequency as a way to understand what words (or phrases) are most uniquely associated with a text (compared to another set of texts).</p>
 <center>
 <p> </p>
@@ -424,8 +383,8 @@ div.tocify {
 </center>
 <p>  </p>
 </div>
-<div id="hackathon-2503-and-2204" class="section level1">
-<h1>Hackathon (25/03 and 22/04)</h1>
+<div id="hackathon-2103-and-2803" class="section level1">
+<h1>Hackathon (21/03 and 28/03)</h1>
 <p>This will be a fully Zoom-based activity so come along to the timetabled Zoom sessions to find out more…</p>
 <p>  </p>
 <div id="technical-details" class="section level2">
@@ -466,7 +425,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -475,6 +434,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')

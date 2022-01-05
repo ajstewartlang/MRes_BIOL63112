@@ -25,7 +25,7 @@ There are two assignments associated with this unit. The full details of these (
 
 &nbsp; &nbsp;  
 
-# Mixed Models Part 1 (11/02)
+# Mixed Models Part 1 (07/02)
 
 In this first part we will see how mixed models combine aspects of linear regression and ANOVA while circumventing the need for observations to be independent of each other. We will also examine how we model the influence of random effects in our mixed models, and see how mixed models can cope with unbalanced designs and missing data.
 
@@ -41,7 +41,7 @@ In this first part we will see how mixed models combine aspects of linear regres
 
 &nbsp;&nbsp;
 
-# Mixed Models Part 2 (18/02)
+# Mixed Models Part 2 (14/02)
 
 In the second part we will examine mixed models for factorial designs, and explore how to model non-continuous dependent variables (e.g., binary and ordinal outcome variables) using the `glmer()` family of mixed models.
 
@@ -57,7 +57,7 @@ In the second part we will examine mixed models for factorial designs, and explo
 
 &nbsp;&nbsp;
 
-# Data Simulation (11/03)
+# Data Simulation (07/03)
 
 In this session we will look at some R programming techniques that you can use to create simulated data sets. Data simulation is a really powerful tool as it allows you to determine whether you're likely to find an effect (for an assumed effect size) by simulating (for example) 10,000 experiments of a particular design with a particular sample size. It's also a great technique for determining whether your dataset will be sufficiently rich in order for you to build the kinds of models you need to in order to test a particular set of predictions. 
 
@@ -73,7 +73,7 @@ In this session we will look at some R programming techniques that you can use t
 
 &nbsp;&nbsp;
 
-# Text Mining (18/03)
+# Text Mining (14/03)
 
 In this session we will cover the basics of text mining using R and examine how to count the occurrences of words in a text, engage in a basic sentiment analysis to examine what kinds of sentiments might be most common in a text. We'll also cover how to use measures such as term frequency-inverse document frequency as a way to understand what words (or phrases) are most uniquely associated with a text (compared to another set of texts).
 
@@ -89,7 +89,7 @@ In this session we will cover the basics of text mining using R and examine how 
 
 &nbsp;&nbsp;
 
-# Hackathon (25/03 and 22/04)
+# Hackathon (21/03 and 28/03)
 
 This will be a fully Zoom-based activity so come along to the timetabled Zoom sessions to find out more...
 
