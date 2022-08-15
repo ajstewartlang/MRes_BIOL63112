@@ -14,7 +14,7 @@
 
 <title>Welcome</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -64,6 +64,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -84,6 +85,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -309,7 +313,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -332,67 +336,145 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">Welcome</h1>
-<h4 class="author">Andrew Stewart, Email: <a href="mailto:drandrewjstewart@gmail.com" class="email">drandrewjstewart@gmail.com</a>, Twitter: <span class="citation">@ajstewart_lang</span></h4>
+<h4 class="author">Andrew Stewart, Email: <a
+href="mailto:drandrewjstewart@gmail.com"
+class="email">drandrewjstewart@gmail.com</a>, Twitter: <span
+class="citation">@ajstewart_lang</span></h4>
 
 </div>
 
 
 <p>  </p>
-<p>Welcome to the Advanced Data Skills, Open Science and Reproducibility M.Res. unit BIOL63112. The following video (as with all the others in this unit) is best viewed in fullscreen mode at 1080 resolution. I have recorded the audio with a podcasting microphone, so it’s best listened to with headphones. YouTube generates subtitles automatically, so please turn those in if you’d find them useful.</p>
-<p>As well as being able to contact me via <a href="mailto:drandrewjstewart@gmail.com">email</a> you can also contact me via our dedicated Slack channel. The details on how to join our Slack channel can be found on Blackboard. You can install the Slack app on your computer or phone - I recommend you do this as interacting with Slack via the app is really great.</p>
-<p>You can speak to me in one of the timetabled Zoom sessions (the details of those are on Blackboard) or via a personal meeting request - just ping me via email or Slack to request that. Additionally, you can follow me on <a href="https://twitter.com/ajstewart_lang?lang=en">Twitter</a> where you’ll see me tweet and re-tweet lots of Open Research and R content.</p>
-<p>There are two assignments associated with this unit. The full details of these (plus hand in dates) can be found on the Blackboard page for this Unit.</p>
+<p>Welcome to the Advanced Statstics Workshops M.Res. unit BIOL63112.
+The following video (as with all the others in this unit) is best viewed
+in fullscreen mode at 1080 resolution. I have recorded the audio with a
+podcasting microphone, so it’s best listened to with headphones. YouTube
+generates subtitles automatically, so please turn those in if you’d find
+them useful.</p>
+<p>As well as being able to contact me via <a
+href="mailto:drandrewjstewart@gmail.com">email</a> you can also contact
+me via our dedicated Slack channel. The details on how to join our Slack
+channel can be found on Blackboard. You can install the Slack app on
+your computer or phone - I recommend you do this as interacting with
+Slack via the app is really great.</p>
+<p>You can speak to me in one of the timetabled Zoom sessions (the
+details of those are on Blackboard) or via a personal meeting request -
+just ping me via email or Slack to request that. Additionally, you can
+follow me on <a
+href="https://twitter.com/ajstewart_lang?lang=en">Twitter</a> where
+you’ll see me tweet and re-tweet lots of Open Research and R
+content.</p>
+<p>There are two assignments associated with this unit. The full details
+of these (plus hand in dates) can be found on the Blackboard page for
+this Unit.</p>
 <p>   </p>
-<div id="mixed-models-part-1-0702" class="section level1">
-<h1>Mixed Models Part 1 (07/02)</h1>
-<p>In this first part we will see how mixed models combine aspects of linear regression and ANOVA while circumventing the need for observations to be independent of each other. We will also examine how we model the influence of random effects in our mixed models, and see how mixed models can cope with unbalanced designs and missing data.</p>
+<div id="mixed-models-part-1" class="section level1">
+<h1>Mixed Models Part 1</h1>
+<p>In this first part we will see how mixed models combine aspects of
+linear regression and ANOVA while circumventing the need for
+observations to be independent of each other. We will also examine how
+we model the influence of random effects in our mixed models, and see
+how mixed models can cope with unbalanced designs and missing data.</p>
 <center>
 <p> </p>
-<p><a href="https://ajstewartlang.github.io/15_mixed_models_pt1/knitted_workshop/15_mixed_models_pt1.html"><img src="images/mixed_models_pt1.png" style="width:75.0%" /></a></p>
+<p><a
+href="https://ajstewartlang.github.io/15_mixed_models_pt1/knitted_workshop/15_mixed_models_pt1.html"><img
+src="images/mixed_models_pt1.png" style="width:75.0%" /></a></p>
 <p> </p>
 </center>
 <p>  </p>
 </div>
-<div id="mixed-models-part-2-1402" class="section level1">
-<h1>Mixed Models Part 2 (14/02)</h1>
-<p>In the second part we will examine mixed models for factorial designs, and explore how to model non-continuous dependent variables (e.g., binary and ordinal outcome variables) using the <code>glmer()</code> family of mixed models.</p>
+<div id="mixed-models-part-2" class="section level1">
+<h1>Mixed Models Part 2</h1>
+<p>In the second part we will examine mixed models for factorial
+designs, and explore how to model non-continuous dependent variables
+(e.g., binary and ordinal outcome variables) using the
+<code>glmer()</code> family of mixed models.</p>
 <center>
 <p> </p>
-<p><a href="https://ajstewartlang.github.io/16_mixed_models_pt2/knitted_workshop/16_mixed_models_pt2.html"><img src="images/mixed_models_pt2.png" style="width:75.0%" /></a></p>
+<p><a
+href="https://ajstewartlang.github.io/16_mixed_models_pt2/knitted_workshop/16_mixed_models_pt2.html"><img
+src="images/mixed_models_pt2.png" style="width:75.0%" /></a></p>
 <p> </p>
 </center>
 <p>  </p>
 </div>
-<div id="data-simulation-0703" class="section level1">
-<h1>Data Simulation (07/03)</h1>
-<p>In this session we will look at some R programming techniques that you can use to create simulated data sets. Data simulation is a really powerful tool as it allows you to determine whether you’re likely to find an effect (for an assumed effect size) by simulating (for example) 10,000 experiments of a particular design with a particular sample size. It’s also a great technique for determining whether your dataset will be sufficiently rich in order for you to build the kinds of models you need to in order to test a particular set of predictions.</p>
+<div id="data-simulation" class="section level1">
+<h1>Data Simulation</h1>
+<p>In this session we will look at some R programming techniques that
+you can use to create simulated data sets. Data simulation is a really
+powerful tool as it allows you to determine whether you’re likely to
+find an effect (for an assumed effect size) by simulating (for example)
+10,000 experiments of a particular design with a particular sample size.
+It’s also a great technique for determining whether your dataset will be
+sufficiently rich in order for you to build the kinds of models you need
+to in order to test a particular set of predictions.</p>
 <center>
 <p> </p>
-<p><a href="https://ajstewartlang.github.io/17_data_sim/knitted_workshop/17_data_sim.html"><img src="images/data_simulation.png" style="width:75.0%" /></a></p>
+<p><a
+href="https://ajstewartlang.github.io/17_data_sim/knitted_workshop/17_data_sim.html"><img
+src="images/data_simulation.png" style="width:75.0%" /></a></p>
 <p> </p>
 </center>
 <p>  </p>
 </div>
-<div id="text-mining-1403" class="section level1">
-<h1>Text Mining (14/03)</h1>
-<p>In this session we will cover the basics of text mining using R and examine how to count the occurrences of words in a text, engage in a basic sentiment analysis to examine what kinds of sentiments might be most common in a text. We’ll also cover how to use measures such as term frequency-inverse document frequency as a way to understand what words (or phrases) are most uniquely associated with a text (compared to another set of texts).</p>
+<div id="text-mining" class="section level1">
+<h1>Text Mining</h1>
+<p>In this session we will cover the basics of text mining using R and
+examine how to count the occurrences of words in a text, engage in a
+basic sentiment analysis to examine what kinds of sentiments might be
+most common in a text. We’ll also cover how to use measures such as term
+frequency-inverse document frequency as a way to understand what words
+(or phrases) are most uniquely associated with a text (compared to
+another set of texts).</p>
 <center>
 <p> </p>
-<p><a href="https://ajstewartlang.github.io/27_introduction_to_text_mining/knitted_workshop/27_introduction_to_text_mining.html"><img src="images/text_mining.png" style="width:75.0%" /></a></p>
+<p><a
+href="https://ajstewartlang.github.io/27_introduction_to_text_mining/knitted_workshop/27_introduction_to_text_mining.html"><img
+src="images/text_mining.png" style="width:75.0%" /></a></p>
 <p> </p>
 </center>
 <p>  </p>
 </div>
-<div id="hackathon-2103-and-2803" class="section level1">
-<h1>Hackathon (21/03 and 28/03)</h1>
-<p>This will be a fully Zoom-based activity so come along to the timetabled Zoom sessions to find out more…</p>
+<div id="hackathon-two-sessions" class="section level1">
+<h1>Hackathon (Two Sessions)</h1>
+<p>This will be a fully Zoom-based activity so come along to the
+timetabled Zoom sessions to find out more…</p>
 <p>  </p>
 <div id="technical-details" class="section level2">
 <h2>Technical Details</h2>
-<p>All of the material in this workshop was created using open source where possible using an <a href="https://www.entroware.com/store/">Entroware Apollo laptop</a> running <a href="https://releases.ubuntu.com/20.04/">GNU/Linux distro Ubuntu 20.04 LTS (Focal Fossa)</a>. The audio was captured with a <a href="https://www.amazon.co.uk/Condenser-Microphone-Recording-Interface-Power-K669/dp/B01N034RTC/ref=sr_1_1_sspa?crid=141Z8ED4VGCVD&amp;dchild=1&amp;keywords=fifine+usb+podcast+condenser+microphone&amp;qid=1594989611&amp;sprefix=fifne+usb%2Caps%2C162&amp;sr=8-1-spons&amp;psc=1&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFFMzAxOE5DUDJIREwmZW5jcnlwdGVkSWQ9QTA4MzA2NjIxVU40MlhNMFNCTDhWJmVuY3J5cHRlZEFkSWQ9QTA5NDI2OTQxOFY0R002UVJBS1AzJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">Fifine USB Podcasting microphone</a> and the video with a <a href="https://www.amazon.co.uk/Razer-Streaming-Adjustable-Brightness-Microphone/dp/B076QK6489/ref=sr_1_3?dchild=1&amp;keywords=razer+kiyo&amp;qid=1594989677&amp;sr=8-3">Razer Kiyo webcam</a>. The audio and video were recorded using <a href="https://obsproject.com/">Open Broadcast Software</a> and edited using <a href="https://shotcut.org/">Shotcut</a>. The R code was written using <a href="https://www.r-project.org/">R 3.6.3</a>, and run in the <a href="https://rstudio.com/products/rstudio/download/">RStudio Desktop IDE</a> version 1.3.959. Ubuntu 20.04 LTS (Focal Fossa), OBS, Shotcut, R, and RStudio Desktop are all <a href="https://en.wikipedia.org/wiki/Open-source_software">open source</a>.</p>
-<p>The structure for this unit was very much inspired by the <a href="https://rstudio.com/resources/webinars/sharing-on-short-notice-how-to-get-your-materials-online-with-r-markdown/">Sharing At Short Notice</a> webinar by Alison Hill and Desirée De Leon.</p>
-<p>The repo for each workshop can be accessed via the ‘Improve this Workshop’ link at the bottom of each workshop page. The workshops and this website were all written using <a href="https://rmarkdown.rstudio.com/">R Markdown</a> and the website is hosted on <a href="https://www.netlify.com/">Netlify</a> via continunous deployment from <a href="https://github.com/ajstewartlang/MRes_BIOL63101">this GitHub repository</a>.</p>
-<p>The source code for each of the Workshops above is licensed under the <a href="https://opensource.org/licenses/MIT">MIT license</a>, and the lecture content under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>.</p>
+<p>All of the material in this workshop was created using open source
+where possible using an <a
+href="https://www.entroware.com/store/">Entroware Apollo laptop</a>
+running <a href="https://releases.ubuntu.com/20.04/">GNU/Linux distro
+Ubuntu 20.04 LTS (Focal Fossa)</a>. The audio was captured with a <a
+href="https://www.amazon.co.uk/Condenser-Microphone-Recording-Interface-Power-K669/dp/B01N034RTC/ref=sr_1_1_sspa?crid=141Z8ED4VGCVD&amp;dchild=1&amp;keywords=fifine+usb+podcast+condenser+microphone&amp;qid=1594989611&amp;sprefix=fifne+usb%2Caps%2C162&amp;sr=8-1-spons&amp;psc=1&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFFMzAxOE5DUDJIREwmZW5jcnlwdGVkSWQ9QTA4MzA2NjIxVU40MlhNMFNCTDhWJmVuY3J5cHRlZEFkSWQ9QTA5NDI2OTQxOFY0R002UVJBS1AzJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">Fifine
+USB Podcasting microphone</a> and the video with a <a
+href="https://www.amazon.co.uk/Razer-Streaming-Adjustable-Brightness-Microphone/dp/B076QK6489/ref=sr_1_3?dchild=1&amp;keywords=razer+kiyo&amp;qid=1594989677&amp;sr=8-3">Razer
+Kiyo webcam</a>. The audio and video were recorded using <a
+href="https://obsproject.com/">Open Broadcast Software</a> and edited
+using <a href="https://shotcut.org/">Shotcut</a>. The R code was written
+using <a href="https://www.r-project.org/">R 3.6.3</a>, and run in the
+<a href="https://rstudio.com/products/rstudio/download/">RStudio Desktop
+IDE</a> version 1.3.959. Ubuntu 20.04 LTS (Focal Fossa), OBS, Shotcut,
+R, and RStudio Desktop are all <a
+href="https://en.wikipedia.org/wiki/Open-source_software">open
+source</a>.</p>
+<p>The structure for this unit was very much inspired by the <a
+href="https://rstudio.com/resources/webinars/sharing-on-short-notice-how-to-get-your-materials-online-with-r-markdown/">Sharing
+At Short Notice</a> webinar by Alison Hill and Desirée De Leon.</p>
+<p>The repo for each workshop can be accessed via the ‘Improve this
+Workshop’ link at the bottom of each workshop page. The workshops and
+this website were all written using <a
+href="https://rmarkdown.rstudio.com/">R Markdown</a> and the website is
+hosted on <a href="https://www.netlify.com/">Netlify</a> via continunous
+deployment from <a
+href="https://github.com/ajstewartlang/MRes_BIOL63101">this GitHub
+repository</a>.</p>
+<p>The source code for each of the Workshops above is licensed under the
+<a href="https://opensource.org/licenses/MIT">MIT license</a>, and the
+lecture content under <a
+href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>.</p>
 </div>
 </div>
 
